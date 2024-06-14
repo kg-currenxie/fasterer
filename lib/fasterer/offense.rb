@@ -12,7 +12,7 @@ module Fasterer
     end
 
     def explanation
-      @explanation ||= EXPLANATIONS.fetch(offense_name)
+      @explanation ||= "#{offense_name}: #{EXPLANATIONS.fetch(offense_name)}
     end
 
     EXPLANATIONS = {
